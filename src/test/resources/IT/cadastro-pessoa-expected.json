@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "tipoPessoa": "PESSOA_FISICA",
+  "cnpj": "19825230000118",
+  "cpf": "94869206056",
+  "nome": "João Victor",
+  "celular": "48999433928",
+  "telefone": "48999433928",
+  "email": "joaodicu387@gmail.com",
+  "endereco": {
+    "cep": "88060230",
+    "logradouro": "Servidão João Antônio da Luz",
+    "numero": "387",
+    "complemento": "casa",
+    "cidade": "Florianópolis",
+    "bairro": "Rio vermelho",
+    "estado": "SC"
+  }
+}
