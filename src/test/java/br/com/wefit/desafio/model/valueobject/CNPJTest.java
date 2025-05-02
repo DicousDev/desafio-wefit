@@ -22,7 +22,8 @@ public class CNPJTest {
         return Stream.of(
           Arguments.of(null, "CNPJ não pode ser nulo."),
           Arguments.of(" ", "CNPJ [ ] inválido."),
-          Arguments.of("198252300 0118", "CNPJ [198252300 0118] inválido.")
+          Arguments.of("198252300 0118", "CNPJ [198252300 0118] inválido."),
+          Arguments.of("198252@00a0118", "CNPJ [198252@00a0118] inválido.")
         );
     }
 }

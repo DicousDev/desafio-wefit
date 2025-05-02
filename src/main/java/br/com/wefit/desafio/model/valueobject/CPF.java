@@ -33,7 +33,7 @@ public class CPF {
         }
 
         String cpfSemEspacos = StringUtils.retirarTodosEspacosEmBranco(cpf);
-        if(cpfSemEspacos.length() != CPF_TAMANHO_VALIDO) {
+        if(cpfSemEspacos.length() != CPF_TAMANHO_VALIDO || Boolean.FALSE.equals(StringUtils.isNumericOnly(cpf))) {
             throw new EntidadeInvalidaRuntimeException("CPF [%s] inválido.".formatted(cpf));
         }
     }

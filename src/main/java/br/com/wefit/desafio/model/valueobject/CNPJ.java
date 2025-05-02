@@ -32,7 +32,7 @@ public class CNPJ {
         }
 
         String cnpjSemEspacos = StringUtils.retirarTodosEspacosEmBranco(cnpj);
-        if(cnpjSemEspacos.length() != CNPJ_TAMANHO_VALIDO) {
+        if(cnpjSemEspacos.length() != CNPJ_TAMANHO_VALIDO || Boolean.FALSE.equals(StringUtils.isNumericOnly(cnpj))) {
             throw new EntidadeInvalidaRuntimeException("CNPJ [%s] inválido.".formatted(cnpj));
         }
     }

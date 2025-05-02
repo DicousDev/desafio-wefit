@@ -22,7 +22,8 @@ public class CPFTest {
         return Stream.of(
                 Arguments.of(null, "CPF não pode ser nulo."),
                 Arguments.of(" ", "CPF [ ] inválido."),
-                Arguments.of("19 825 2300", "CPF [19 825 2300] inválido.")
+                Arguments.of("19 825 2300", "CPF [19 825 2300] inválido."),
+                Arguments.of("19@825a2300", "CPF [19@825a2300] inválido.")
         );
     }
 }
